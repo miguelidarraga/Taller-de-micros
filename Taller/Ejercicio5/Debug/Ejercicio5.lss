@@ -1,0 +1,402 @@
+
+Ejercicio5.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000236  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001e2  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000236  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000268  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000050  00000000  00000000  000002a8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000b3d  00000000  00000000  000002f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000084e  00000000  00000000  00000e35  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000445  00000000  00000000  00001683  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000084  00000000  00000000  00001ac8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000475  00000000  00000000  00001b4c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000003b7  00000000  00000000  00001fc1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000040  00000000  00000000  00002378  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e4       	ldi	r29, 0x40	; 64
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	1d d0       	rcall	.+58     	; 0xd4 <main>
+  9a:	a1 c0       	rjmp	.+322    	; 0x1de <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <motor_parar>:
+
+// Máscara de los 4 pins de control (IN1..IN4 usamos 2 solo en ejemplo)
+#define MOTOR_MASK 0x0F   // PB0..PB3
+
+void motor_parar(void) {
+	PORTB &= ~MOTOR_MASK; // todas salidas motor = 0
+  9e:	85 b1       	in	r24, 0x05	; 5
+  a0:	80 7f       	andi	r24, 0xF0	; 240
+  a2:	85 b9       	out	0x05, r24	; 5
+  a4:	08 95       	ret
+
+000000a6 <motor_horario>:
+}
+
+void motor_horario(void) {
+	// Ejemplo: IN1=1, IN2=0 -> PB0=1, PB1=0
+	PORTB = (PORTB & ~MOTOR_MASK) | (1<<PB0);
+  a6:	85 b1       	in	r24, 0x05	; 5
+  a8:	80 7f       	andi	r24, 0xF0	; 240
+  aa:	81 60       	ori	r24, 0x01	; 1
+  ac:	85 b9       	out	0x05, r24	; 5
+  ae:	08 95       	ret
+
+000000b0 <motor_antihorario>:
+}
+
+void motor_antihorario(void) {
+	// Ejemplo: IN1=0, IN2=1 -> PB0=0, PB1=1
+	PORTB = (PORTB & ~MOTOR_MASK) | (1<<PB1);
+  b0:	85 b1       	in	r24, 0x05	; 5
+  b2:	80 7f       	andi	r24, 0xF0	; 240
+  b4:	82 60       	ori	r24, 0x02	; 2
+  b6:	85 b9       	out	0x05, r24	; 5
+  b8:	08 95       	ret
+
+000000ba <motor_freno>:
+}
+
+void motor_freno(void) {
+	// Ambos en 1 (dependiendo del driver, esto suele ser brake)
+	PORTB = (PORTB & ~MOTOR_MASK) | (1<<PB0) | (1<<PB1);
+  ba:	85 b1       	in	r24, 0x05	; 5
+  bc:	80 7f       	andi	r24, 0xF0	; 240
+  be:	83 60       	ori	r24, 0x03	; 3
+  c0:	85 b9       	out	0x05, r24	; 5
+  c2:	08 95       	ret
+
+000000c4 <fallo_on>:
+}
+
+void fallo_on(void) {
+	PORTB |= (1<<PB4);   // LED fallo
+  c4:	85 b1       	in	r24, 0x05	; 5
+  c6:	80 61       	ori	r24, 0x10	; 16
+  c8:	85 b9       	out	0x05, r24	; 5
+  ca:	08 95       	ret
+
+000000cc <fallo_off>:
+}
+
+void fallo_off(void) {
+	PORTB &= ~(1<<PB4);
+  cc:	85 b1       	in	r24, 0x05	; 5
+  ce:	8f 7e       	andi	r24, 0xEF	; 239
+  d0:	85 b9       	out	0x05, r24	; 5
+  d2:	08 95       	ret
+
+000000d4 <main>:
+}
+
+int main(void) {
+	// Configuración pines
+	DDRB = 0xFF;    // PB0..PB3 salidas motor, PB4 LED fallo
+  d4:	8f ef       	ldi	r24, 0xFF	; 255
+  d6:	84 b9       	out	0x04, r24	; 4
+	DDRC = 0x00;    // PC0..PC2 entradas botones
+  d8:	17 b8       	out	0x07, r1	; 7
+	PORTC = 0xFF;   // Pull-ups internos activados
+  da:	88 b9       	out	0x08, r24	; 8
+
+	motor_parar();
+  dc:	e0 df       	rcall	.-64     	; 0x9e <motor_parar>
+	fallo_off();
+  de:	f6 df       	rcall	.-20     	; 0xcc <fallo_off>
+  e0:	00 e0       	ldi	r16, 0x00	; 0
+
+	// Estado actual: 0 = parado, 1 = horario, 2 = antihorario
+	int estado = 0;
+  e2:	10 e0       	ldi	r17, 0x00	; 0
+  e4:	46 b1       	in	r20, 0x06	; 6
+
+	while (1) {
+		// Leer botones (sin bloqueos)
+		int h = BTN_HORARIO();
+  e6:	86 b1       	in	r24, 0x06	; 6
+		int a = BTN_ANTIHORARIO();
+  e8:	82 70       	andi	r24, 0x02	; 2
+  ea:	90 e0       	ldi	r25, 0x00	; 0
+  ec:	26 b1       	in	r18, 0x06	; 6
+		int f = BTN_FRENO();
+  ee:	24 70       	andi	r18, 0x04	; 4
+  f0:	30 e0       	ldi	r19, 0x00	; 0
+  f2:	54 2f       	mov	r21, r20
+
+		// Detectar combinaciones inválidas: por ejemplo H y A juntos -> fallo
+		if ((h && a) || (h && a && f)) {
+  f4:	51 70       	andi	r21, 0x01	; 1
+  f6:	c5 2f       	mov	r28, r21
+  f8:	50 e0       	ldi	r21, 0x00	; 0
+  fa:	d5 2f       	mov	r29, r21
+  fc:	40 fd       	sbrc	r20, 0
+  fe:	02 c0       	rjmp	.+4      	; 0x104 <main+0x30>
+ 100:	00 97       	sbiw	r24, 0x00	; 0
+ 102:	39 f0       	breq	.+14     	; 0x112 <main+0x3e>
+ 104:	20 97       	sbiw	r28, 0x00	; 0
+ 106:	99 f4       	brne	.+38     	; 0x12e <main+0x5a>
+ 108:	00 97       	sbiw	r24, 0x00	; 0
+ 10a:	89 f4       	brne	.+34     	; 0x12e <main+0x5a>
+ 10c:	21 15       	cp	r18, r1
+ 10e:	31 05       	cpc	r19, r1
+ 110:	71 f4       	brne	.+28     	; 0x12e <main+0x5a>
+			// si presionan HORARIO y ANTI al mismo tiempo -> fallo
+			motor_parar();
+ 112:	c5 df       	rcall	.-118    	; 0x9e <motor_parar>
+ 114:	d7 df       	rcall	.-82     	; 0xc4 <fallo_on>
+			fallo_on();
+ 116:	8f e3       	ldi	r24, 0x3F	; 63
+ 118:	9d e0       	ldi	r25, 0x0D	; 13
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 11a:	23 e0       	ldi	r18, 0x03	; 3
+ 11c:	81 50       	subi	r24, 0x01	; 1
+ 11e:	90 40       	sbci	r25, 0x00	; 0
+ 120:	20 40       	sbci	r18, 0x00	; 0
+ 122:	e1 f7       	brne	.-8      	; 0x11c <main+0x48>
+ 124:	00 c0       	rjmp	.+0      	; 0x126 <main+0x52>
+ 126:	00 00       	nop
+ 128:	00 e0       	ldi	r16, 0x00	; 0
+ 12a:	10 e0       	ldi	r17, 0x00	; 0
+			estado = 0;
+ 12c:	db cf       	rjmp	.-74     	; 0xe4 <main+0x10>
+			_delay_ms(50); // antirrebote visual
+			continue;
+		}
+
+		// Prioridad: FRENO
+		if (f) {
+ 12e:	23 2b       	or	r18, r19
+ 130:	71 f4       	brne	.+28     	; 0x14e <main+0x7a>
+			fallo_off();
+ 132:	cc df       	rcall	.-104    	; 0xcc <fallo_off>
+ 134:	c2 df       	rcall	.-124    	; 0xba <motor_freno>
+			motor_freno();
+ 136:	5f e3       	ldi	r21, 0x3F	; 63
+ 138:	8d e0       	ldi	r24, 0x0D	; 13
+ 13a:	93 e0       	ldi	r25, 0x03	; 3
+ 13c:	51 50       	subi	r21, 0x01	; 1
+ 13e:	80 40       	sbci	r24, 0x00	; 0
+ 140:	90 40       	sbci	r25, 0x00	; 0
+ 142:	e1 f7       	brne	.-8      	; 0x13c <main+0x68>
+ 144:	00 c0       	rjmp	.+0      	; 0x146 <main+0x72>
+ 146:	00 00       	nop
+ 148:	00 e0       	ldi	r16, 0x00	; 0
+			estado = 0;
+ 14a:	10 e0       	ldi	r17, 0x00	; 0
+ 14c:	cb cf       	rjmp	.-106    	; 0xe4 <main+0x10>
+			_delay_ms(50);
+			continue;
+ 14e:	cd 2b       	or	r28, r29
+		}
+
+		// Si piden HORARIO
+		if (h) {
+ 150:	d9 f4       	brne	.+54     	; 0x188 <main+0xb4>
+			fallo_off();
+ 152:	bc df       	rcall	.-136    	; 0xcc <fallo_off>
+ 154:	02 30       	cpi	r16, 0x02	; 2
+			if (estado == 2) {
+ 156:	11 05       	cpc	r17, r1
+ 158:	51 f4       	brne	.+20     	; 0x16e <main+0x9a>
+ 15a:	af df       	rcall	.-162    	; 0xba <motor_freno>
+				// estaba en sentido contrario -> frenar antes
+				motor_freno();
+ 15c:	2f ef       	ldi	r18, 0xFF	; 255
+ 15e:	54 e3       	ldi	r21, 0x34	; 52
+ 160:	8c e0       	ldi	r24, 0x0C	; 12
+ 162:	21 50       	subi	r18, 0x01	; 1
+ 164:	50 40       	sbci	r21, 0x00	; 0
+ 166:	80 40       	sbci	r24, 0x00	; 0
+ 168:	e1 f7       	brne	.-8      	; 0x162 <main+0x8e>
+ 16a:	00 c0       	rjmp	.+0      	; 0x16c <main+0x98>
+ 16c:	00 00       	nop
+ 16e:	9b df       	rcall	.-202    	; 0xa6 <motor_horario>
+				_delay_ms(200);
+			}
+			motor_horario();
+ 170:	9f ef       	ldi	r25, 0xFF	; 255
+ 172:	22 e5       	ldi	r18, 0x52	; 82
+ 174:	57 e0       	ldi	r21, 0x07	; 7
+ 176:	91 50       	subi	r25, 0x01	; 1
+ 178:	20 40       	sbci	r18, 0x00	; 0
+ 17a:	50 40       	sbci	r21, 0x00	; 0
+ 17c:	e1 f7       	brne	.-8      	; 0x176 <main+0xa2>
+ 17e:	00 c0       	rjmp	.+0      	; 0x180 <main+0xac>
+ 180:	00 00       	nop
+ 182:	01 e0       	ldi	r16, 0x01	; 1
+			estado = 1;
+ 184:	10 e0       	ldi	r17, 0x00	; 0
+			_delay_ms(120); // antirrebote
+			continue;
+ 186:	ae cf       	rjmp	.-164    	; 0xe4 <main+0x10>
+		}
+
+		// Si piden ANTIHORARIO
+		if (a) {
+ 188:	89 2b       	or	r24, r25
+ 18a:	d9 f4       	brne	.+54     	; 0x1c2 <main+0xee>
+			fallo_off();
+ 18c:	9f df       	rcall	.-194    	; 0xcc <fallo_off>
+ 18e:	01 30       	cpi	r16, 0x01	; 1
+			if (estado == 1) {
+ 190:	11 05       	cpc	r17, r1
+ 192:	51 f4       	brne	.+20     	; 0x1a8 <main+0xd4>
+ 194:	92 df       	rcall	.-220    	; 0xba <motor_freno>
+				motor_freno();
+ 196:	8f ef       	ldi	r24, 0xFF	; 255
+ 198:	94 e3       	ldi	r25, 0x34	; 52
+ 19a:	2c e0       	ldi	r18, 0x0C	; 12
+ 19c:	81 50       	subi	r24, 0x01	; 1
+ 19e:	90 40       	sbci	r25, 0x00	; 0
+ 1a0:	20 40       	sbci	r18, 0x00	; 0
+ 1a2:	e1 f7       	brne	.-8      	; 0x19c <main+0xc8>
+ 1a4:	00 c0       	rjmp	.+0      	; 0x1a6 <main+0xd2>
+ 1a6:	00 00       	nop
+ 1a8:	83 df       	rcall	.-250    	; 0xb0 <motor_antihorario>
+				_delay_ms(200);
+			}
+			motor_antihorario();
+ 1aa:	5f ef       	ldi	r21, 0xFF	; 255
+ 1ac:	82 e5       	ldi	r24, 0x52	; 82
+ 1ae:	97 e0       	ldi	r25, 0x07	; 7
+ 1b0:	51 50       	subi	r21, 0x01	; 1
+ 1b2:	80 40       	sbci	r24, 0x00	; 0
+ 1b4:	90 40       	sbci	r25, 0x00	; 0
+ 1b6:	e1 f7       	brne	.-8      	; 0x1b0 <main+0xdc>
+ 1b8:	00 c0       	rjmp	.+0      	; 0x1ba <main+0xe6>
+ 1ba:	00 00       	nop
+			estado = 2;
+ 1bc:	02 e0       	ldi	r16, 0x02	; 2
+ 1be:	10 e0       	ldi	r17, 0x00	; 0
+			_delay_ms(120); // antirrebote
+			continue;
+ 1c0:	91 cf       	rjmp	.-222    	; 0xe4 <main+0x10>
+		}
+
+		// Si no hay botones -> parar (o mantener último estado, según diseño)
+		// Aquí elegimos PARAR y apagar fallo
+		motor_parar();
+ 1c2:	6d df       	rcall	.-294    	; 0x9e <motor_parar>
+ 1c4:	83 df       	rcall	.-250    	; 0xcc <fallo_off>
+		fallo_off();
+ 1c6:	2f e3       	ldi	r18, 0x3F	; 63
+ 1c8:	5d e0       	ldi	r21, 0x0D	; 13
+ 1ca:	83 e0       	ldi	r24, 0x03	; 3
+ 1cc:	21 50       	subi	r18, 0x01	; 1
+ 1ce:	50 40       	sbci	r21, 0x00	; 0
+ 1d0:	80 40       	sbci	r24, 0x00	; 0
+ 1d2:	e1 f7       	brne	.-8      	; 0x1cc <main+0xf8>
+ 1d4:	00 c0       	rjmp	.+0      	; 0x1d6 <main+0x102>
+ 1d6:	00 00       	nop
+ 1d8:	00 e0       	ldi	r16, 0x00	; 0
+ 1da:	10 e0       	ldi	r17, 0x00	; 0
+		estado = 0;
+ 1dc:	83 cf       	rjmp	.-250    	; 0xe4 <main+0x10>
+
+000001de <_exit>:
+ 1de:	f8 94       	cli
+
+000001e0 <__stop_program>:
+ 1e0:	ff cf       	rjmp	.-2      	; 0x1e0 <__stop_program>
