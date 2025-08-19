@@ -10,25 +10,25 @@
 #define VERDE_PEATON      (1 << PA3)
 
 int main(void) {
-	// Botón como entrada con pull-up interno
+	
 	DDRD &= ~(1 << BTN_PEATONAL);
 	PORTD |= (1 << BTN_PEATONAL);
 
-	// LEDs como salida
+	
 	DDRA |= VERDE_VEHICULO | AMARILLO_VEHICULO | ROJO_VEHICULO | VERDE_PEATON;
 
-	uint8_t peatones_piden_cruce = 0;
+	int peatones_piden_cruce = 0;
 
 	while (1) {
-		// TEST: mostrar estado real del botón en ROJO_VEHICULO
+		
 		if (!(PIND & (1 << BTN_PEATONAL))) {
-			PORTA |= ROJO_VEHICULO;   // botón presionado
+			PORTA |= ROJO_VEHICULO;  
 			peatones_piden_cruce = 1;
 			} else {
-			PORTA &= ~ROJO_VEHICULO;  // botón suelto
+			PORTA &= ~ROJO_VEHICULO; 
 		}
 
-		// Secuencia normal del semáforo
+		
 		PORTA = VERDE_VEHICULO;
 		_delay_ms(5000);
 

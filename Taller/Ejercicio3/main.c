@@ -5,21 +5,20 @@
 
 static inline void jtag_off(void){ MCUCR |= (1<<JTD); MCUCR |= (1<<JTD); }
 
-// Tabla 7 segmentos común cátodo
 char decoCC[10]={191, 134, 219, 207, 230, 237, 253, 135, 255, 231};
 
 int main(void){
 	jtag_off();
 
-	DDRA = 0xFF;    // decenas
-	DDRC = 0xFF;    // unidades
-	DDRD = 0x00;    // botones
-	PORTD = (1<<PD0)|(1<<PD1)|(1<<PD2); // pull-ups internos activados
+	DDRA = 0xFF;    
+	DDRC = 0xFF;    
+	DDRD = 0x00;    
+	PORTD = (1<<PD0)|(1<<PD1)|(1<<PD2); 
 
 	int count = 0;
 
 	while(1){
-		// Botones activos en bajo
+		
 		int up   = !(PIND & (1<<PD0));
 		int down = !(PIND & (1<<PD1));
 		int clr  = !(PIND & (1<<PD2));
